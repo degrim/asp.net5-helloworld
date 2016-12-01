@@ -9,8 +9,7 @@
     },
 
     "publishOptions": {
-        "include": [ "wwwroot" ],
-        "exclude": [ "**.user", "**.vspscc" ]
+        "include": [ "wwwroot" ]
     },
 
     "dependencies": {
@@ -31,7 +30,9 @@
         }
     },
 
-    "scripts": { },
+    "scripts": {
+      "precompile": [ "bower install" ]
+    },
 
     "version": "1.0.1"
 }
